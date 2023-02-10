@@ -10,8 +10,7 @@ public class task1 {
 
     public static void main(String[] args) {
         // outputResult(work(input(text: "Введите n: ")));
-        int a = input("Введи n: ");
-        int res = work(a);
+        int res = work(input("Введи n: "));
         outputResult(res);
     }
     
@@ -21,8 +20,7 @@ public class task1 {
         return input.nextInt();
     }
 
-    public static int work(int args) {
-        int n = args;
+    public static int work(int n) {
         int result = n*(n + 1)/2;
         return result;
     }
