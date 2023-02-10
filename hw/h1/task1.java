@@ -9,7 +9,10 @@ public class task1 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        
+        // outputResult(work(input(text: "Введите n: ")));
+        int a = input("Введи n: ");
+        int res = work(a);
+        outputResult(res);
     }
     
 
@@ -18,14 +21,13 @@ public class task1 {
         return input.nextInt();
     }
 
-    public static int work(String[] args) {
-        int n = input("Введите n: ");
+    public static int work(int args) {
+        int n = args;
         int result = n*(n + 1)/2;
-        System.out.println(result);
         return result;
     }
     
-    void outputResult() {
-        System.out.println();
+    static void outputResult(int arg) {
+        System.out.println(arg);
     }
 }
