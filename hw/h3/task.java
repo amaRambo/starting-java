@@ -3,7 +3,6 @@ package hw.h3;
 import java.util.Arrays;
 
 public class task {
-
     public static void main(String[] args) {
         
         int[] array = {231,12,32,2,432,543,23,45,43,4234,56,345,546,345,7,23,7,4,34,5435,45,345,56,45};
@@ -49,6 +48,4 @@ public class task {
 
         return res;
     }
-
-    
 }
