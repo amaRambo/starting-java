@@ -6,9 +6,7 @@ public class app2 {
 
         int[][] map = Mapa();
         Printer(Queue(map));
-        Printer(map);
-        
-        
+      
     }
 
     
@@ -32,6 +30,7 @@ public class app2 {
             {-1,00,00,00,00,00,00,00,00,00,00,00,00,00,00,-1,00,00,00,-1},
             {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},
         };
+        map[7][4] = 1;
         return map;
     }
 
@@ -52,31 +51,37 @@ public class app2 {
         int n = 4;
         qm.add(m); // start
         qn.add(n);
-        while (qm != null) {
-            
+        int count = 0;
+        System.out.println(qm.isEmpty());
+        while (!qm.isEmpty()) {
+            System.out.println(count++);
             if (map[qm.element()-1][qn.element()] != -1) {
-                if (map[qm.element()-1][qn.element()] ==0 || map[qm.element()-1][qn.element()] > map[qm.element()][qn.element()] + 1) { 
+                if (map[qm.element()-1][qn.element()] ==0 || 
+                map[qm.element()-1][qn.element()] > map[qm.element()][qn.element()] + 1) { 
                     map[qm.element()-1][qn.element()] = map[qm.element()][qn.element()] + 1;
                     qm.add(qm.element()-1);
                     qn.add(qn.element());
                 }
             }
             if (map[qm.element()][qn.element()+1] != -1) {
-                if (map[qm.element()][qn.element()+1] == 0 || map[qm.element()][qn.element()+1] > map[qm.element()][qn.element()] + 1) {
+                if (map[qm.element()][qn.element()+1] == 0 || 
+                map[qm.element()][qn.element()+1] > map[qm.element()][qn.element()] + 1) {
                     map[qm.element()][qn.element()+1] = map[qm.element()][qn.element()] + 1;
                     qm.add(qm.element());
-                    qm.add(qn.element()+1);
+                    qn.add(qn.element()+1);
                 }
             }
             if (map[qm.element()+1][qn.element()] != -1) {
-                if (map[qm.element()+1][qn.element()] == 0 || map[qm.element()+1][qn.element()] > map[qm.element()][qn.element()] + 1) {
+                if (map[qm.element()+1][qn.element()] == 0 || 
+                map[qm.element()+1][qn.element()] > map[qm.element()][qn.element()] + 1) {
                     map[qm.element()+1][qn.element()] = map[qm.element()][qn.element()] + 1;
                     qm.add(qm.element()+1);
-                    qm.add(qn.element());
+                    qn.add(qn.element());
                 }
             }
             if (map[qm.element()][qn.element()-1] != -1) {
-                if (map[qm.element()][qn.element()-1] == 0 || map[qm.element()][qn.element()-1] > map[qm.element()][qn.element()] + 1) {
+                if (map[qm.element()][qn.element()-1] == 0 || 
+                map[qm.element()][qn.element()-1] > map[qm.element()][qn.element()] + 1) {
                     map[qm.element()][qn.element()-1] = map[qm.element()][qn.element()] + 1;
                     qm.add(qm.element());
                     qn.add(qn.element()-1);
