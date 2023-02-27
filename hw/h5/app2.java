@@ -2,7 +2,7 @@ package hw.h5;
 import java.util.*;
 
 public class app2 {
-     public static void main(String[] args) {
+    public static void main(String[] args) {
 
         int[][] map = Mapa();
         Printer(Queue(map));
@@ -30,7 +30,7 @@ public class app2 {
             {-1,00,00,00,00,00,00,00,00,00,00,00,00,00,00,-1,00,00,00,-1},
             {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1},
         };
-        map[7][4] = 1;
+        // map[7][4] = 1;
         return map;
     }
 
@@ -38,7 +38,23 @@ public class app2 {
 
         for (int i = 0; i < map.length; i++) {
             for (int j = 0; j < map[0].length; j++) {
-                System.out.printf("%3d",map[i][j]);
+                if (map[i][j] == -1) {
+                    System.out.printf("@@@");
+                
+                }
+                else if ( map[i][j] == 1) {
+                    System.out.printf("  k");
+                } 
+                else if (i == 10 & j == 17) {
+                    System.out.printf("%3d",map[i][j]);
+                }
+                else {
+                    System.out.printf("   ");
+                }
+                // if (i == 10 & j == 17) {
+                //     System.out.printf("%d",map[i][j]);
+                // }
+                // System.out.printf("%3d",map[i][j]);
             }
             System.out.println();
         }  
@@ -49,12 +65,13 @@ public class app2 {
         Queue<Integer> qn = new LinkedList<Integer>();
         int m = 7;
         int n = 4;
+        map[m][n] = 1;
         qm.add(m); // start
         qn.add(n);
-        int count = 0;
+        // int count = 0;
         System.out.println(qm.isEmpty());
         while (!qm.isEmpty()) {
-            System.out.println(count++);
+            // System.out.println(count++);
             if (map[qm.element()-1][qn.element()] != -1) {
                 if (map[qm.element()-1][qn.element()] ==0 || 
                 map[qm.element()-1][qn.element()] > map[qm.element()][qn.element()] + 1) { 
