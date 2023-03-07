@@ -29,4 +29,20 @@ public class Product {
         return String.format("name - %s ,price - %d, count - %d, unit - %s", 
                                         this.name, this.price, this.count, this.unit);
     }
+
+    public String getName() {
+        return String.format("name - %s", this.name);
+    }
+
+    public String getPrice() {
+        return String.format("price - %d", this.price);
+    }
+
+    public String getCount() {
+        return String.format("count - %d", this.count);
+    }
+
+    public String getUnit() {
+        return String.format("unit - %s", this.unit);
+    }
 }

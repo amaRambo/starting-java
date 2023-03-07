@@ -5,6 +5,13 @@ public class Baby extends Product {
     protected boolean hypoallergenicity;
     protected int minAge;
 
+    public Baby() {
+
+        this.hypoallergenicity = false;
+        this.minAge = 0;
+
+    }
+    
     public Baby(Boolean hypoallergenicity, int minAge) {
 
         this.hypoallergenicity = hypoallergenicity;
