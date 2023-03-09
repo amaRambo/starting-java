@@ -1,4 +1,4 @@
-package hw.h1;
+package before.hw.h1;
 import java.util.Scanner;
 
 /**

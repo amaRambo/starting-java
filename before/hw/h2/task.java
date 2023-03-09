@@ -1,4 +1,4 @@
-package hw.h2;
+package before.hw.h2;
 
 import java.io.BufferedReader;
 import java.io.File;

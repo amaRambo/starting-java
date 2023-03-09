@@ -1,4 +1,4 @@
-package hw.h3;
+package before.hw.h3;
 
 import java.util.Arrays;
 

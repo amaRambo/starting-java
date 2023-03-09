@@ -1,9 +1,9 @@
-package hw.h6;
+package before.hw.h6;
 
 import java.util.ArrayList;
 import java.util.Queue;
 
-import hw.h5.app2;
+import before.hw.h5.app2;
 
 public class MapPrinter {
     

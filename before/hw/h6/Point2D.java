@@ -1,4 +1,4 @@
-package hw.h6;
+package before.hw.h6;
 
 public class Point2D {
     

@@ -1,4 +1,4 @@
-package hw.h6;
+package before.hw.h6;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

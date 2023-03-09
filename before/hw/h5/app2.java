@@ -1,4 +1,4 @@
-package hw.h5;
+package before.hw.h5;
 import java.util.*;
 
 public class app2 {
