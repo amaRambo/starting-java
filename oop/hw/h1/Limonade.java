@@ -1,5 +1,6 @@
 package oop.hw.h1;
 
-public class Limonade {
+public class Limonade extends Beverages {
+    
     
 }

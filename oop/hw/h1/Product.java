@@ -31,18 +31,18 @@ public class Product {
     }
 
     public String getName() {
-        return String.format("name - %s", this.name);
+        return this.name;
     }
 
-    public String getPrice() {
-        return String.format("price - %d", this.price);
+    public int getPrice() {
+        return this.price;
     }
 
-    public String getCount() {
-        return String.format("count - %d", this.count);
+    public int getCount() {
+        return this.count;
     }
 
     public String getUnit() {
-        return String.format("unit - %s", this.unit);
+        return this.unit;
     }
 }

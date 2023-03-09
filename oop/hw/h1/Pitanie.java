@@ -1,15 +1,15 @@
 package oop.hw.h1;
 
-public class BeforeDate extends Product {
+public class Pitanie extends Product {
 
     protected String date;
 
-    public BeforeDate() {
+    public Pitanie() {
 
         this.date = "";
     }
 
-    public BeforeDate(String date) {
+    public Pitanie(String date) {
 
         this.date = date;
 
