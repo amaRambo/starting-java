@@ -17,4 +17,8 @@ public class Bread extends Pitanie {
         super.name, super.price, super.count, super.unit, super.date, this.typeofmuka);
     }
 
+    public String getType() {
+        return this.typeofmuka;
+    }
+
 }

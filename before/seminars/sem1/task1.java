@@ -1,4 +1,4 @@
-package seminars.sem1;
+package before.seminars.sem1;
 
 public class task1 {
     public static void main(String[] args){

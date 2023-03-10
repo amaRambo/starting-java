@@ -1,4 +1,4 @@
-package seminars.lec5;
+package before.seminars.lec5;
 
 
 import java.util.*;

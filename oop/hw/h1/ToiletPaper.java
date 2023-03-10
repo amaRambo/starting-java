@@ -1,6 +1,6 @@
 package oop.hw.h1;
 
-import seminars.lec1.program;
+import before.seminars.lec1.program;
 
 public class ToiletPaper extends Hygiene{
     
@@ -18,5 +18,9 @@ public class ToiletPaper extends Hygiene{
         return String.format(
             "name - %s ,price - %d, count - %d, unit - %s, pieces - %d, col-vo sloev - %d", 
             super.name, super.price, super.count, super.unit, super.pieces, this.sloi); 
+    }
+
+    public int getSloi() {
+        return this.sloi;
     }
 }

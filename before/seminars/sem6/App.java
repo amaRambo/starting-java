@@ -1,4 +1,4 @@
-package seminars.sem6;
+package before.seminars.sem6;
 
 public class App {
    public static void main(String[] args) {

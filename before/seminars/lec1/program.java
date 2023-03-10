@@ -1,4 +1,4 @@
-package seminars.lec1;
+package before.seminars.lec1;
 
 // /**
 //  * program
