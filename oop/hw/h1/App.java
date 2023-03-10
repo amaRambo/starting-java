@@ -1,7 +1,5 @@
 package oop.hw.h1;
 
-import javax.lang.model.util.ElementScanner14;
-
 public class App {
     public static void main(String[] args) {
 
