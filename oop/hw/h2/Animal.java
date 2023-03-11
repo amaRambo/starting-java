@@ -1,6 +1,6 @@
 package oop.hw.h2;
 
-public abstract class Animal {
+public class Animal implements Sound {
 
     protected int hiegh;
     protected int weight;
@@ -33,5 +33,9 @@ public abstract class Animal {
 
     public void printEyeColor() {
         System.out.println(this.eyecolor);
+    }
+
+    public void getSound(){
+        System.out.println("any sound");
     }
 }

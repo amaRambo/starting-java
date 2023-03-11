@@ -1,6 +1,6 @@
 package oop.hw.h2;
 
-public class Tiger extends Wild implements Sound {
+public class Tiger extends Wild {
     
     public String Info() {
         return String.format(

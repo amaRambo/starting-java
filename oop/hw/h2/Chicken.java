@@ -1,6 +1,6 @@
 package oop.hw.h2;
 
-public class Chicken extends Home implements Sound {
+public class Chicken extends Home {
     
     public String Info() {
         return 

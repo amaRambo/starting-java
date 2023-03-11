@@ -1,6 +1,6 @@
 package oop.hw.h2;
 
-public class Wolf extends Wild implements Sound {
+public class Wolf extends Wild{
     
     protected String position;
 

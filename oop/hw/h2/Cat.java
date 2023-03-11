@@ -1,6 +1,6 @@
 package oop.hw.h2;
 
-public class Cat extends Home implements Sound {
+public class Cat extends Home {
     
     protected String wool;
 

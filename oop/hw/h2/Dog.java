@@ -1,6 +1,6 @@
 package oop.hw.h2;
 
-public class Dog extends Home implements Sound {
+public class Dog extends Home{
 
     protected String training;
 
