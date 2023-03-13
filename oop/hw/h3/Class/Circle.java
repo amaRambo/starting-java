@@ -24,7 +24,7 @@ public class Circle extends BaseFig implements Lengthable, Squareable {
     }
 
     public String Info() {
-        return String.format("Circle: radius - %d, Length - %d, Square - %d",
+        return String.format("Circle: radius - %d, Length - %f, Square - %f",
                              this.r, this.Length(), this.Square());
     }
 

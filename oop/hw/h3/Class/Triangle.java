@@ -43,7 +43,7 @@ public class Triangle extends BaseFig implements Squareable, Perimetrable {
     }
 
     public String Info() {
-        return String.format("Triangle: sides - %d %d %d, Perimetr - %d, Square - %d",
+        return String.format("Triangle: sides - (%d, %d, %d), Perimetr - %f, Square - %f",
         this.a, this.b, this.c, this.Perimetr(), this.Square());
     }
 

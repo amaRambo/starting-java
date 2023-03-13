@@ -32,7 +32,7 @@ public class Rectangle extends BaseFig implements Perimetrable, Squareable {
     }
 
     public String Info() {
-        return String.format("Rectangle: side 1 - %d, side 2 - %d, Perimetr - %d, Square - %d",
+        return String.format("Rectangle: sides - (%d, %d), Perimetr - %f, Square - %f",
                                         this.a, this.b, this.Perimetr(), this.Square());
     }
 
