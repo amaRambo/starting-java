@@ -18,4 +18,8 @@ public abstract class BaseFig implements Comparable<BaseFig>, Squareable{
         }
         else return 1;
     }
+
+    public double Square() {
+        return 0;
+    }
 }

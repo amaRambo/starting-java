@@ -3,7 +3,7 @@ package oop.hw.h3.Class;
 import oop.hw.h3.Interface.Lengthable;
 import oop.hw.h3.Interface.Squareable;
 
-public class Circle extends BaseFig implements Lengthable, Squareable {
+public class Circle extends BaseFig implements Lengthable{
     
     protected int r;
 

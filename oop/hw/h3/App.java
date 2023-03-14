@@ -14,8 +14,13 @@ public class App {
         pa4ka.Add(new Rectangle(4,7));
         pa4ka.Add(new Rectangle(5));
         pa4ka.Info();
-        pa4ka.Del(1);
-        pa4ka.Info();
+        // pa4ka.Del(1);
+        // pa4ka.Info();
+        
+        if (pa4ka.get(0).compareTo(pa4ka.get(1)) == 1) {
+            System.out.println("asd");
+        }
+        else System.out.println("dsa");
         
     }
     

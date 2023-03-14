@@ -3,7 +3,7 @@ package oop.hw.h3.Class;
 import oop.hw.h3.Interface.Perimetrable;
 import oop.hw.h3.Interface.Squareable;
 
-public class Triangle extends BaseFig implements Squareable, Perimetrable {
+public class Triangle extends BaseFig implements Perimetrable {
     
     protected int a;
     protected int b;

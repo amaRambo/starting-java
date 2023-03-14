@@ -90,4 +90,8 @@ public class Figures {
         return value;
     }
 
+    public BaseFig get(int index) {
+        return list.get(index);
+    }
+
 }
