@@ -14,11 +14,19 @@ public class Rectangle extends BaseFig implements Perimetrable{
     }
 
     public Rectangle(int a, int b) {
+        if (a <= 0 || b <= 0) {
+            System.out.println("Невозможно создать такую фигуру");
+            System. exit(0);
+        }
         this.a = a;
         this.b = b;
     }
 
     public Rectangle(int a) {
+        if (a <= 0) {
+            System.out.println("Невозможно создать такую фигуру");
+            System. exit(0);
+        }
         this.a = a;
         this.b = a;
     }

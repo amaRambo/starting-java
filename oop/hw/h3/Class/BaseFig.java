@@ -19,6 +19,17 @@ public abstract class BaseFig implements Comparable<BaseFig>, Squareable{
         else return 1;
     }
 
+    
+    // public boolean Compare(BaseFig fig) {
+    //     if (this.Square() > fig.Square()) {
+    //         return true;
+    //     }
+    //     else if (this.Square() < fig.Square()) {
+    //         return false;
+    //     }
+    //     else return true;
+    // }
+
     public double Square() {
         return 0;
     }

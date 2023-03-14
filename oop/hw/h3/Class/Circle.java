@@ -12,6 +12,10 @@ public class Circle extends BaseFig implements Lengthable{
     }
 
     public Circle(int r) {
+        if (r <= 0) {
+            System.out.println("Невозможно созжать такую фигуру");
+            System. exit(0);
+        }
         this.r = r;
     }
 

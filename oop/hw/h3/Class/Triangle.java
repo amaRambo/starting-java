@@ -16,18 +16,31 @@ public class Triangle extends BaseFig implements Perimetrable {
     }
 
     public Triangle(int a, int b, int c) {
+        if (a + b < c || a + c < b || c + b < a || a <= 0 || b <= 0 || c <= 0) {
+            System.out.println("Невозможно создать такую фигуру");
+            System. exit(0);
+        }
+            
         this.a = a;
         this.b = b;
         this.c = c;
     }
 
     public Triangle(int a, int b) { // равнобедренный
+        if (a + b < c || a + c < b || c + b < a || a <= 0 || b <= 0 || c <= 0) {
+            System.out.println("Невозможно создать такую фигуру");
+            System. exit(0);
+        }
         this.a = a;
         this.b = b;
         this.c = b;
     }
 
     public Triangle(int a) { // равносторонний
+        if (a + b < c || a + c < b || c + b < a || a <= 0 || b <= 0 || c <= 0) {
+            System.out.println("Невозможно создать такую фигуру");
+            System. exit(0);
+        }
         this.a = a;
         this.b = a;
         this.c = a;

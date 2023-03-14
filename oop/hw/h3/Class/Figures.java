@@ -20,11 +20,17 @@ public class Figures {
 
     public void Add(BaseFig element) {
         this.list.add(element);
+        System.out.println(String.format("Фигура добавлена, index = %d", this.list.size()-1));
+    }
+    
+    public void Add(int index, BaseFig element) {
+        list.add(index, element);
+        System.out.println(String.format("Фигура добавлена, index = %d", index));
     }
 
     public void Del(int index) {
         if (index >= 0 & index < list.size()) {
-            this.list.remove(list.get(index));
+            this.list.remove(index);
         }
     }
 
@@ -92,6 +98,10 @@ public class Figures {
 
     public BaseFig get(int index) {
         return list.get(index);
+    }
+
+    public int Size() {
+        return this.list.size();
     }
 
 }
