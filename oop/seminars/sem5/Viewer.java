@@ -10,13 +10,13 @@ public class Viewer {
 
     }
 
-    public int getValue(String msg) {
+    public String getValue(String msg) {
         System.out.printf("%s", msg);
-        return scan.nextInt();
+        return scan.nextLine();
     }
 
     public void print(Double result, String msg) {
-        System.out.printf("%s %f\n", msg, result);
+        System.out.printf("%s %s\n", msg, result);
     }
 
     // public int Menu(String msg) {
