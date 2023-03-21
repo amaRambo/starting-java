@@ -1,4 +1,4 @@
-package oop.seminars.sem5;
+package oop.seminars.sem5.Classes;
 
 import java.util.Scanner;
 

@@ -1,4 +1,6 @@
-package oop.seminars.sem5;
+package oop.seminars.sem5.Operations;
+
+import oop.seminars.sem5.Classes.Model;
 
 public class Difference extends Model {
     

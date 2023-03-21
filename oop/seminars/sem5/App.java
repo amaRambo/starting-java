@@ -1,5 +1,8 @@
 package oop.seminars.sem5;
 
+import oop.seminars.sem5.Classes.Presenter;
+import oop.seminars.sem5.Classes.Viewer;
+
 public class App {
     public static void main(String[] args) {
 
