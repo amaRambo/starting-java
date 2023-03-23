@@ -18,10 +18,5 @@ public class Viewer {
     public void print(Double result, String msg) {
         System.out.printf("%s %s\n", msg, result);
     }
-
-    // public int Menu(String msg) {
-    //     System.out.printf("%s", msg);
-    //     return scan.nextInt();
-    // }
     
 }

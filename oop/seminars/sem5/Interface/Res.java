@@ -1,4 +1,4 @@
-package oop.seminars.sem5.Classes;
+package oop.seminars.sem5.Interface;
 
 public interface Res {
     double result();

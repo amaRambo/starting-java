@@ -1,6 +1,8 @@
 package oop.seminars.sem5.Classes;
 
-public class Model implements Res {
+import oop.seminars.sem5.Interface.Res;
+
+public abstract class Model implements Res {
     
     protected double a, b;
 
