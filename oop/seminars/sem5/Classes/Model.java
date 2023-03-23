@@ -2,9 +2,9 @@ package oop.seminars.sem5.Classes;
 
 public class Model implements Res {
     
-    protected Integer a, b;
+    protected double a, b;
 
-    public Model(Integer a, Integer b) {
+    public Model(double a, double b) {
         this.a = a;
         this.b = b;
     } 
@@ -14,11 +14,11 @@ public class Model implements Res {
         this.b = 0;
     } 
 
-    public void setA(Integer value) {
+    public void setA(double value) {
         this.a = value;
     }
 
-    public void setB(Integer value) {
+    public void setB(double value) {
         this.b = value;
     }
 
