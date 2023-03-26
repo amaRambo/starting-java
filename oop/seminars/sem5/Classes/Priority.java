@@ -25,8 +25,10 @@ public class Priority {
         this.list = list;
     }
     
-    public ArrayList<String> calc() {
+    public double calc() {
+        
         String str = "";
+
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals("^")) {
                 Power pow = 
@@ -34,6 +36,7 @@ public class Priority {
                 str = "" + pow.result();
                 list.add(i-1, str);
                 forAll(i);
+                i--;
                 str = "";
                 System.out.println(list);
 
@@ -49,7 +52,6 @@ public class Priority {
                     list.add(i-1, str);
                     str = "";
                     System.out.println(list);
-
                 }
                 if (list.get(i).equals("/")) {
                     Division div = 
@@ -58,11 +60,12 @@ public class Priority {
                     list.add(i-1, str);
                     str = "";
                     System.out.println(list);
-
                 }
                 forAll(i);
+                i--;
             }
         }
+
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals("+") || list.get(i).equals("-")) {
                 if (list.get(i).equals("+")) {
@@ -80,13 +83,13 @@ public class Priority {
                     list.add(i-1, str);
                     str = "";
                     System.out.println(list);
-
                 }
                 forAll(i);
+                i--;
             }
         }  
         
-        return list;
+        return Double.parseDouble(list.get(0));
     }
 
 
@@ -99,6 +102,5 @@ public class Priority {
         list.remove(i);
         list.remove(i);
         list.remove(i);  
-        i -= i;
     }
 }

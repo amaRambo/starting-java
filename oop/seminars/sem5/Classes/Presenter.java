@@ -15,7 +15,6 @@ public class Presenter {
         String primer = view.getValue("введите ваш пример: ");
         ToArray array = new ToArray(primer);
         list.set(array.ToArrayList());
-        System.out.println(list.calc());
-        // view.print(Double.parseDouble(list.calc().get(0)), String.format("%s = ", primer));
+        view.print((list.calc()), String.format("%s = ", primer));
     }
 }
