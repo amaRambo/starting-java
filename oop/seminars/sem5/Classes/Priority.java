@@ -25,33 +25,40 @@ public class Priority {
         this.list = list;
     }
     
-    public ArrayList<String> calcPow() {
+    public ArrayList<String> calc() {
         String str = "";
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals("^")) {
-                Power any = 
+                Power pow = 
                     new Power(Double.parseDouble(list.get(i-1)),Double.parseDouble(list.get(i+1)));
-                str = "" + any.result();
+                str = "" + pow.result();
                 list.add(i-1, str);
                 forAll(i);
                 str = "";
+                System.out.println(list);
+
             }
         }
+        
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals("*") || list.get(i).equals("/")) {
                 if (list.get(i).equals("*")) {
-                    Product any = 
+                    Product prod = 
                         new Product(Double.parseDouble(list.get(i-1)),Double.parseDouble(list.get(i+1)));
-                    str = "" + any.result();
+                    str = "" + prod.result();
                     list.add(i-1, str);
                     str = "";
+                    System.out.println(list);
+
                 }
                 if (list.get(i).equals("/")) {
-                    Division any = 
+                    Division div = 
                         new Division(Double.parseDouble(list.get(i-1)),Double.parseDouble(list.get(i+1)));
-                    str = "" + any.result();
+                    str = "" + div.result();
                     list.add(i-1, str);
                     str = "";
+                    System.out.println(list);
+
                 }
                 forAll(i);
             }
@@ -59,22 +66,26 @@ public class Priority {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).equals("+") || list.get(i).equals("-")) {
                 if (list.get(i).equals("+")) {
-                    Sum any = 
+                    Sum sum = 
                         new Sum(Double.parseDouble(list.get(i-1)),Double.parseDouble(list.get(i+1)));
-                    str = "" + any.result();
+                    str = "" + sum.result();
                     list.add(i-1, str);
                     str = "";
+                    System.out.println(list);
                 }
                 if (list.get(i).equals("-")) {
-                    Difference any = 
+                    Difference dif = 
                         new Difference(Double.parseDouble(list.get(i-1)),Double.parseDouble(list.get(i+1)));
-                    str = "" + any.result();
+                    str = "" + dif.result();
                     list.add(i-1, str);
                     str = "";
+                    System.out.println(list);
+
                 }
                 forAll(i);
             }
         }  
+        
         return list;
     }
 
